@@ -1,16 +1,16 @@
 
 body {
     margin: 0;
-    
+    width: 100vw;
+    height: 100vh;
     z-index: 0;
 }
 
-#main-wrapper {
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.wrapper {
+    position: relative;
+    
+    overflow: auto;
+    margin: 0 auto 50 auto;
 }
 
 header {
@@ -74,24 +74,21 @@ header {
     margin: 0;
     float: right;
     color: white;
-    
-    
-
 }
 
-img {
+.img {
+    
     width: 200px;
     height: 200px;
     float: left;
     padding: 17 30 20 30;
-    
 }
 
-p {
+.p {
     padding-left: 30px;
     padding-right: 30px;
     line-height: 1.5;
-
+    padding-top: 20px;
 }
 
 .nav-style {
@@ -120,8 +117,8 @@ p {
     position: relative;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 40px;
-    padding-top: 3px;
-    left: 45px;
+    padding-top: 17px;
+    left: 35px;
     color: #4aaaa5;
 }
 
@@ -140,6 +137,10 @@ p {
     float: left;
     border: 1px solid #dddddd;
     
+}
+
+.article {
+    margin-left: 10px;
 }
 
 
@@ -161,13 +162,16 @@ p {
 }
 
 footer {
-    background: #666666;
-    width: 100%;
-    height: 70px;
-    position: absolute;
-    bottom: 0;
-    border-top: 1px solid #4aaaa5;
     
+    
+}
+
+.li-buttons {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    left: 14%;
+    padding-top: 10px;
 }
 
 .aside-li {
@@ -181,12 +185,12 @@ footer {
     
 }
 
-.aside h1 {
+.aside .h1 {
     font-family: 'Arial';
     font-size: 25px;
     position: relative;
     text-align: center;
-    top: 10px;
+    top: 20px;
     left: 20px;
     width: 220px;
     margin: 0;
@@ -196,7 +200,7 @@ footer {
     
 }
 
-.main-section h1 {
+.main-section .h1 {
     padding-left: 30px;
     
 }
@@ -217,8 +221,14 @@ footer {
 }
 
 .footer {
+    margin-top: 170px;
+    padding-top: 45px;
     text-align: center;
     color: white;
+    background: #666666;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #4aaaa5;
 }
 
 .aside-buttons {
@@ -229,7 +239,7 @@ footer {
     color: mediumspringgreen;
 }
 
-.port-photos img {
+.port-photos .img {
     position: relative;
     float: left;
     width: 220px;
@@ -237,6 +247,12 @@ footer {
     padding-right: 10px;
     margin: 0;
     left: 45px;
+}
+
+.port-photos {
+    position: relative;
+    float: left;
+    margin: 10 0 20 60;
 }
 
 .hr-main-port {
@@ -262,3 +278,88 @@ footer {
     left: 50px;
     padding-top: 20px;
 }
+
+.port-banner {
+    position: relative;
+    background: #4aaaa5;
+    opacity: .7;
+    top: 200px;
+    width:90%;
+    height: 40px;
+    float: left;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    #main-nav {
+        position: relative;
+        bottom: 0;
+        
+    }
+
+    #banner-name {
+        width: 100%;
+        height: 100%;
+        
+        left: -5px;
+        right: auto;
+    }
+
+    #head-wrapper {
+        height: 100px;
+        width: 100%
+        
+    }
+
+    .id-main {
+        position: relative;
+        bottom: 0;
+        top: 30px;
+        left: 12%;
+        float: left;
+        margin-top: 10px;
+    }
+     
+    .id-main a {
+        
+        color: white;
+        
+    }
+
+    .name {
+        left: 17%;
+        display: block;
+        float: left;
+        
+    }
+
+    .main-section {
+        width:300px;
+        height: 300px;
+    }
+
+    .footer {
+        margin-top: 200px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .port-banner {
+        position: relative;
+        float: left;
+        top: 20px;
+        width: 90%;
+        height: 20px;
+        background: blue;
+    }
+    
+}
+
