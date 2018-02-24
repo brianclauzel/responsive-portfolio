@@ -18,6 +18,12 @@ header {
     
 }
 
+.yolo {
+    background: gray;
+    width: 400px;
+    height: 267px;
+}
+
 #head-wrapper {
     position: relative;
     background: #ffffff;
